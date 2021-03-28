@@ -78,6 +78,11 @@ export default defineComponent({
     const fixed = ref(false)
     const items = ref<MenuItem[]>([
       {
+        icon: 'mdi-note',
+        title: 'ToDos',
+        to: '/todos',
+      },
+      {
         icon: 'mdi-apps',
         title: 'Welcome',
         to: '/',
