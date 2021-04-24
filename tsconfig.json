@@ -30,6 +30,7 @@
       "@nuxtjs/axios",
       "vuetify",
       "@types/node",
+      "@types/jest"
     ]
   },
   "exclude": [
