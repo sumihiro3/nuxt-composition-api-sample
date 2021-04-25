@@ -36,7 +36,7 @@ const config: NuxtConfig = {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // https://composition-api.nuxtjs.org/
-    'nuxt-composition-api',
+    '@nuxtjs/composition-api/module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,6 +69,10 @@ const config: NuxtConfig = {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  generate: {
+    // choose to suit your project
+    interval: 2000,
+  },
 }
 
 export default config

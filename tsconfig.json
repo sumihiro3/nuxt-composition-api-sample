@@ -1,41 +1,51 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "allowJs": true,
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
     "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
     ],
     "esModuleInterop": true,
-    "allowJs": true,
-    "sourceMap": true,
-    "strict": true,
-    "noImplicitAny": false,
-    "noEmit": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
+    "moduleResolution": "node",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
       "@/*": [
-        "./*"
+        "src/*"
+      ],
+      "~/*": [
+        "src/*"
       ]
     },
-    "typeRoots": ["/types"],
+    "removeComments": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "typeRoots" : [
+      "src/types"
+    ],
     "types": [
       "@nuxt/types",
       "@nuxtjs/axios",
       "vuetify",
       "@types/node",
-      "@types/jest"
-    ]
+      "@types/jest",
+      "@types/webpack"
+    ],
+    "strict": false,
+    "noImplicitAny": false,
+    "noEmit": true
   },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue"
+  ],
   "exclude": [
     "node_modules",
-    ".nuxt",
-    "dist"
+    "stories"
   ]
 }
+

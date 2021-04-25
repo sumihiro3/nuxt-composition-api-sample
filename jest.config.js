@@ -2,6 +2,7 @@ process.env.NODE_ENV = 'test'
 
 module.exports = {
   preset: 'ts-jest',
+  setupFiles: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^~/(.*)$': '<rootDir>/src/$1',
@@ -16,7 +17,7 @@ module.exports = {
   },
   globals: {
     'ts-jest': {
-      tsConfig: 'tsconfig.json',
+      tsconfig: 'tsconfig.json',
     },
   },
   collectCoverage: true,

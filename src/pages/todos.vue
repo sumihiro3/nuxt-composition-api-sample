@@ -61,14 +61,15 @@
 </template>
 
 <script lang="ts">
-import { Ref } from '@vue/composition-api'
+// import { Ref } from '@vue/composition-api'
 import {
+  Ref,
   defineComponent,
   ref,
   useAsync,
   useContext,
   computed,
-} from 'nuxt-composition-api'
+} from '@nuxtjs/composition-api'
 
 interface ToDo {
   id: number
