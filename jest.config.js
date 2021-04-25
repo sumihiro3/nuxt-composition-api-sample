@@ -9,7 +9,11 @@ module.exports = {
     '^vue$': 'vue/dist/vue.common.js',
   },
   moduleFileExtensions: ['ts', 'js', 'vue', 'json'],
-  testMatch: ['<rootDir>/test/**/*.js', '<rootDir>/test/**/*.ts'],
+  testMatch: [
+    '<rootDir>/test/**/*.js',
+    '<rootDir>/test/**/*.ts',
+    '<rootDir>/test/**/*.vue',
+  ],
   transform: {
     '^.+\\.ts$': 'ts-jest',
     '^.+\\.js$': 'babel-jest',
